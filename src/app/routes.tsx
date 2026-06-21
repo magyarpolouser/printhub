@@ -11,6 +11,7 @@ import { CheckoutPage } from "./pages/CheckoutPage";
 import { ContactPage } from "./pages/ContactPage";
 import { TermsPage } from "./pages/TermsPage";
 import { PrivacyPage } from "./pages/PrivacyPage";
+import { OrderConfirmedPage } from "./pages/OrderConfirmedPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 
 export const router = createBrowserRouter([
@@ -29,6 +30,7 @@ export const router = createBrowserRouter([
       { path: "terms", Component: TermsPage },
       { path: "privacy", Component: PrivacyPage },
       { path: "login", Component: LoginPage },
+      { path: "order-confirmed", Component: OrderConfirmedPage },
       { path: "*", Component: NotFoundPage },
     ],
   },
