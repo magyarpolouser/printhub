@@ -1,5 +1,6 @@
 import React from 'react';
 import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { Link } from 'react-router';
 
 export function Footer() {
   return (
@@ -84,8 +85,8 @@ export function Footer() {
               © 2024 PrintHub. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+              <Link to="/privacy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</Link>
+              <Link to="/terms" className="text-gray-400 hover:text-white transition-colors">Terms of Service</Link>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Shipping Policy</a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Returns</a>
             </div>
