@@ -12,6 +12,7 @@ import { ContactPage } from "./pages/ContactPage";
 import { TermsPage } from "./pages/TermsPage";
 import { PrivacyPage } from "./pages/PrivacyPage";
 import { OrderConfirmedPage } from "./pages/OrderConfirmedPage";
+import { SearchPage } from "./pages/SearchPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 
 export const router = createBrowserRouter([
@@ -31,6 +32,7 @@ export const router = createBrowserRouter([
       { path: "privacy", Component: PrivacyPage },
       { path: "login", Component: LoginPage },
       { path: "order-confirmed", Component: OrderConfirmedPage },
+      { path: "search", Component: SearchPage },
       { path: "*", Component: NotFoundPage },
     ],
   },

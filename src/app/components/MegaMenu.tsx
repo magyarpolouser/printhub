@@ -90,9 +90,9 @@ export function MegaMenu({ onCategoryClick, onLoginClick, onCartClick, cartCount
 
             {/* Icons */}
             <div className="flex items-center gap-6">
-              <button className="hover:text-purple-400 transition-colors">
+              <Link to="/search" className="hover:text-purple-400 transition-colors">
                 <Search className="w-5 h-5" />
-              </button>
+              </Link>
               <button
                 onClick={onLoginClick ?? (() => navigate('/login'))}
                 className="hover:text-purple-400 transition-colors"
